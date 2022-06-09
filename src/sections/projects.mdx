@@ -1,6 +1,30 @@
-## Projects
+---
+title: Projects
+embeddedImagesLocal:
+  - automart-full.jpg
+  - Automart.jpg
+  - malbase.jpg
+  - starbeats.jpg
+  - omdb.jpg
+---
+
+## `Projects[].fill()`
+
+import { GatsbyImage, getImage } from "gatsby-plugin-image";
+
+**Here** you'll find a curated list of my **_[Projects](https://www.github.com/retr0ville)_**
 
 <ProjectCard
+  imageChild={
+    <GatsbyImage
+      imgClassName="project-card-image"
+      image={getImage(props.projectImages[0])}
+      alt="A cinema"
+      width={550}
+      height={260}
+      placeholder="tracedSVG"
+    />
+  }
   title="Tips & Tricks for Gatsby"
   link="https://www.lekoarts.de/gatsby/tips-and-tricks-for-gatsby?utm_source=cara&utm_medium=Theme"
   bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
@@ -9,6 +33,15 @@
   about Gatsby. From GraphQL over local development to deployment.
 </ProjectCard>
 <ProjectCard
+  imageChild={
+    <GatsbyImage
+      imgClassName="project-card-image"
+      image={getImage(props.projectImages[1])}
+      alt="A cinema"
+      width={550}
+      height={260}
+    />
+  }
   title="Setting  up a yarn Workspace"
   link="https://www.lekoarts.de/javascript/setting-up-a-yarn-workspace-with-typescript-eslint-and-cypress?utm_source=cara&utm_medium=Theme"
   bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
@@ -16,6 +49,15 @@
   A robust solution for multi-package repositories.
 </ProjectCard>
 <ProjectCard
+  imageChild={
+    <GatsbyImage
+      imgClassName="project-card-image"
+      image={getImage(props.projectImages[2])}
+      alt="A cinema"
+      width={550}
+      height={260}
+    />
+  }
   title="Adding a Draft Feature to Gatsby"
   link="https://www.lekoarts.de/garden/adding-a-draft-feature-to-gatsby?utm_source=cara&utm_medium=Theme"
   bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
@@ -23,6 +65,15 @@
   A solution with the createSchemaCustomization API.
 </ProjectCard>
 <ProjectCard
+  imageChild={
+    <GatsbyImage
+      imgClassName="project-card-image"
+      image={getImage(props.projectImages[3])}
+      alt="A cinema"
+      width={550}
+      height={260}
+    />
+  }
   title="Theme UI Plugin for Figma"
   link="https://www.lekoarts.de/design/introducing-the-theme-ui-plugin-for-figma?utm_source=cara&utm_medium=Theme"
   bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"

@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "cara",
+  "name": "rtrvl",
   "description": "Playful and Colorful One-Page portfolio featuring Parallax effects and animations",
   "version": "0.2.11",
   "author": "LekoArts <hello@lekoarts.de>",
@@ -8,23 +8,30 @@
   "starter-name": "gatsby-starter-portfolio-cara",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop",
-    "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
-    "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
+    "develop": "gatsby develop -p 8100",
     "start": "gatsby develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "@lekoarts/gatsby-theme-cara": "^3.0.0",
-    "gatsby": "^4.12.1",
-    "gatsby-plugin-gatsby-cloud": "^4.12.1",
+    "@mdx-js/mdx": "^1.6.22",
+    "@mdx-js/react": "^1.6.22",
+    "@react-spring/parallax": "^9.4.5",
+    "@react-spring/web": "^9.4.5",
+    "@theme-ui/css": "^0.14.5",
+    "@theme-ui/presets": "^0.11.3",
+    "gatsby": "^4.17.0-next.0",
+    "gatsby-plugin-image": "^2.15.1",
     "gatsby-plugin-manifest": "^4.12.1",
+    "gatsby-plugin-mdx": "^3.15.2",
+    "gatsby-plugin-react-helmet": "^5.15.0",
+    "gatsby-plugin-theme-ui": "^0.11.1",
     "gatsby-plugin-webpack-bundle-analyser-v2": "^1.1.27",
+    "gatsby-source-filesystem": "^4.15.0",
+    "gatsby-transformer-sharp": "^4.16.0",
     "react": "^18.0.0",
-    "react-dom": "^18.0.0"
-  },
-  "devDependencies": {
-    "cross-env": "^7.0.3"
+    "react-dom": "^18.0.0",
+    "react-helmet": "^6.1.0",
+    "theme-ui": "^0.11.3"
   }
 }
