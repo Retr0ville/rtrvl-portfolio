@@ -38,13 +38,19 @@ const ProjectCard = ({ link, title, children, bg, imageChild }: ProjectCardProps
       sx={{
         ".project-card-image": {
           borderRadius: `0.5rem 0.5rem 0 0`,
+          opacity: 0.8,
         },
       }}
     >{imageChild}</div>
     <div 
     sx={{
-      opacity: 0.85,
-      textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)` 
+      opacity: 1,
+      zIndex: 2,
+      textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)`,
+      top: `1rem`,
+      left: `0`,
+      padding: `1rem`,
+      position: `absolute`,
     }}>
       {children}
     </div>
@@ -56,6 +62,7 @@ const ProjectCard = ({ link, title, children, bg, imageChild }: ProjectCardProps
         fontSize: [4, 5],
         fontWeight: `medium`,
         lineHeight: 1,
+        marginInline: `1rem`,
       }}
     >
       {title}
