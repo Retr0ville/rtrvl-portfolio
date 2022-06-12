@@ -98,7 +98,17 @@ const halfYellowShadow = keyframes`
     width: 50%;
   }`
   const bounceFadeBackward = keyframes`
-    
+    50% {
+      z-index: 2;
+      transform: translateY(-70%);
+    }
+    60%{
+      z-index: -2
+    }
+    100% {
+      transform: translateY(-40%);
+      opaciity: 0.5;
+    }
   `
 const ProjectCard = ({ link, title, children, bg, domColor, imageChild }: ProjectCardProps) => (
   <div
@@ -195,6 +205,10 @@ const ProjectCard = ({ link, title, children, bg, domColor, imageChild }: Projec
             borderRadius: `0.5rem 0.5rem 0 0`,
             opacity: 1,
             zIndex: 2,
+            animationName: `${bounceFadeBackward}`,
+            animationTimingFunction: `ease`,
+            animationDuration: `5s`,
+            animationIterationCount: `infinite`,
           },
         }}
       >{imageChild}</div>
