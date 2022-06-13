@@ -16,10 +16,15 @@ type ProjectCardProps = {
   projectName: string
 }
 
-const ProjectCard = ({ link, title, children, bg, domColor, imageChild, focused, projectName }: ProjectCardProps) => {
+const ProjectCard = ({ link, title, children, bg, domColor, imageChild, projectName }: ProjectCardProps) => {
   const { currFocused, setCurrFocused} = useContext(focusContext)
+
+  let focused = projectName === currFocused
   return (
     <div
+      onClick={()=>{
+        !focused ? setCurrFocused(projectName) : setCurrFocused('none')
+      }}
       sx={{
         transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
         "&:hover": {
@@ -111,7 +116,7 @@ const ProjectCard = ({ link, title, children, bg, domColor, imageChild, focused,
               opacity: 1,
               zIndex: 2,
               animationTimingFunction: `ease`,
-              animationDuration: `2s`,
+              animationDuration: `1.5s`,
               animationFillMode: `forwards`,
               animationIterationCount: `1`,
             },
@@ -120,14 +125,17 @@ const ProjectCard = ({ link, title, children, bg, domColor, imageChild, focused,
         <div
           className="description"
           sx={{
-            opacity: `${focused} ? 1 : 0`,
+            opacity: `${focused ? 1 : 0}`,
             zIndex: 1,
             textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)`,
-            top: `20%`,
+            top: `${focused ? "12%" : "25%"}`,
+            color: `white`,
+            // backgroundColor:`#39393911`,
+            borderRadius: `0 8px 8px 0`,
             left: `0`,
             padding: `1rem`,
             position: `absolute`,
-            tranition: `all, 2s`,
+            transition: `all 1.5s`
           }}>
           {children}
         </div>

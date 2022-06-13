@@ -97,6 +97,9 @@ export const bounceFadeBackward = keyframes`
     90%{
       // transform: translateY(-90%);
     }
+    60% {
+      transform: translateY(-75%);
+    }
     100% {
       transform: translateY(-75%);
       opacity: 0.3;
@@ -107,8 +110,11 @@ export const bounceFadeForward = keyframes`
       transform: translateY(-75%);
       opacity: 0.3;
     }
-    50% {
-      transform: translateY(0%);
+    60% {
+      transform: translateY(-75%);
+    }
+    80% {
+      transform: translateY(10%);
       opacity: .8;
     }
     100% {
