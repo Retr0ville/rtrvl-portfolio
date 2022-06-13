@@ -25,7 +25,7 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
     }
   }
 `)
- const imageData = data.mdx.frontmatter.embeddedImagesLocal
+//  const imageData = data.mdx.frontmatter.embeddedImagesLocal
  const {mdx: {frontmatter:{embeddedImagesLocal},body}} = data
   return (
   <div>
