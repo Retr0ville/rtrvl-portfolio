@@ -205,17 +205,19 @@ const ProjectCard = ({ link, title, children, bg, domColor, imageChild }: Projec
             borderRadius: `0.5rem 0.5rem 0 0`,
             opacity: 1,
             zIndex: 2,
-            animationName: `${bounceFadeBackward}`,
             animationTimingFunction: `ease`,
             animationDuration: `5s`,
-            animationIterationCount: `infinite`,
+            animationIterationCount: `1`,
+            "&:hover":{
+              animationName: `${bounceFadeBackward}`,
+            }
           },
         }}
       >{imageChild}</div>
       <div
         sx={{
           opacity: 0,
-          zIndex: -1,
+          zIndex: 1,
           textShadow: `0 2px 10px rgba(0, 0, 0, 0.3)`,
           top: `1rem`,
           left: `0`,
