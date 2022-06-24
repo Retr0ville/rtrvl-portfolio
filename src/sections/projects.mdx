@@ -39,7 +39,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
     <GatsbyImage
       imgClassName="project-card-image"
       image={getImage(props.projectImages[1])}
-      alt="A cinema"
+      alt="automart"
       width={550}
       height={260}
     />
@@ -50,14 +50,14 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
   link="https://www.lekoarts.de/javascript/setting-up-a-yarn-workspace-with-typescript-eslint-and-cypress?utm_source=cara&utm_medium=Theme"
   bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
 >
-  Not a fan of arbitrary colors? Automart is a saner take on store design where users can buy and resell cars it features item upload via cloudinary, adding and removing of cars with basic user authentication upcoming. 
+  Not a fan of arbitrary colors? Automart is a saner take on store design where users can buy and resell cars it features item upload via cloudinary, adding and removing of cars from MongoDB, with basic user authentication upcoming. 
 </ProjectCard>
 <ProjectCard
   imageChild={
     <GatsbyImage
       imgClassName="project-card-image"
       image={getImage(props.projectImages[2])}
-      alt="A cinema"
+      alt="starbeats"
       width={550}
       height={260}
     />
@@ -69,25 +69,62 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
   link="https://www.lekoarts.de/garden/adding-a-draft-feature-to-gatsby?utm_source=cara&utm_medium=Theme"
   bg="linear-gradient(to right, #009245 0%, #FCEE21 100%)"
 >
-  Stabeats is a copy of Beatstars's ID promotion page that i designed from the ground-up using their website as a reference. It features a fully responsive and clean user interface.
+  Stabeats is a copy of Beatstars's ID promotion page that i designed from the ground-up using their website as a reference. It features a fully responsive and clean user interface, and is hosted on AWS Elastic beanstalk throug a docker container. I have also setup a simple CI pipeline for it using CircleCI (and Travis CI.. I personally prefer Circle for its orbs)
 </ProjectCard>
 <ProjectCard
   imageChild={
     <GatsbyImage
       imgClassName="project-card-image"
       image={getImage(props.projectImages[3])}
-      alt="A cinema"
+      alt="Malbase"
       width={550}
       height={260}
     />
   }
   
-  projectName="music"
+  projectName="Malbase"
   domColor="#0E7CEB"
-  title="Theme UI Plugin for Figma"
+  title="A Myanimelist.net user library"
   link="https://www.lekoarts.de/design/introducing-the-theme-ui-plugin-for-figma?utm_source=cara&utm_medium=Theme"
   bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
 >
-  The Theme UI plugin for Figma allows for a workflow where Theme UI is the
-  starting point both for design & development.
+  Malbase is an anime library for myanimelist users. It queries a username from Jikan API and returns the watchlist of that account in different categories such as on-hold, completed, plan-to-watch, dropped, e.t.c. the cards are fully responsive and paginated. I used semanticUI component library for its design.
+</ProjectCard>
+<ProjectCard
+  imageChild={
+    <GatsbyImage
+      imgClassName="project-card-image"
+      image={getImage(props.projectImages[3])}
+      alt="checkout"
+      width={550}
+      height={260}
+    />
+  }
+  
+  projectName="Checkout"
+  domColor="#0E7CEB"
+  title="Web Implementation of a figma prototype"
+  link="https://www.lekoarts.de/design/introducing-the-theme-ui-plugin-for-figma?utm_source=cara&utm_medium=Theme"
+  bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+>
+  Checkout was a 24 hour design challenge where I created the UI for a platform where users can add their credit card details. It incudes a modern navigation bar, an all CSS credit card design and a state managed form.
+</ProjectCard>
+<ProjectCard
+  imageChild={
+    <GatsbyImage
+      imgClassName="project-card-image"
+      image={getImage(props.projectImages[4])}
+      alt="dictionary"
+      width={550}
+      height={260}
+    />
+  }
+  
+  projectName="Diction IO"
+  domColor="#0E7CEB"
+  title="A fully featured dictionary app"
+  link="https://www.lekoarts.de/design/introducing-the-theme-ui-plugin-for-figma?utm_source=cara&utm_medium=Theme"
+  bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
+>
+  Diction IO is a dictionary app that allows users to search for words and their definitions, It displays a random word and its meaning upon launching or reloading the the web page,And includes a search form that accepts a word and proovides the its meaning, audio, word phonetic, synonyms, antonyms e.t.c. in a standard dictionary format.
 </ProjectCard>
