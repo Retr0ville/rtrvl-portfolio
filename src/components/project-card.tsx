@@ -6,7 +6,9 @@ import focusContext from "../contexts/focusContext"
 import { halfCyanShadow, halfYellowShadow, bounceFadeForward, bounceFadeBackward} from "../styles/keyframes"
 
 type ProjectCardProps = {
-  link: string
+  githubLink: string  
+  liveLink: string
+  stack: string[] 
   title: string
   children: React.ReactNode
   bg: string
@@ -16,7 +18,7 @@ type ProjectCardProps = {
   projectName: string
 }
 
-const ProjectCard = ({ link, title, children, bg, domColor, imageChild, projectName }: ProjectCardProps) => {
+const ProjectCard = ({ githubLink, liveLink, stack, title, children, bg, domColor, imageChild, projectName }: ProjectCardProps) => {
   const { currFocused, setCurrFocused} = useContext(focusContext)
 
   let focused = projectName === currFocused
@@ -168,7 +170,8 @@ const ProjectCard = ({ link, title, children, bg, domColor, imageChild, projectN
         >
           <a
             title="view code"
-            href="github.com"
+            href={githubLink}
+            target="_blank"
             sx={{
               position: `relative`,
               display: `inline-block`,
@@ -218,7 +221,7 @@ const ProjectCard = ({ link, title, children, bg, domColor, imageChild, projectN
           </a>
           <a
             title="view live website"
-            href="live.com"
+            href={liveLink}
             target="_blank"
             sx={{
               position: `relative`,
