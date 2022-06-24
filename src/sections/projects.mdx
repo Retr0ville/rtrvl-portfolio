@@ -7,7 +7,6 @@ embeddedImagesLocal:
   - malbase-full.jpg
   - checkout.jpg
   - dictionary.jpg
-  - omdb.jpg
 ---
 
 ## `Projects[].fill()`
@@ -47,7 +46,7 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
   }
   projectName="Automart"
   domColor="#6C25AD"
-  title="Auto sale web app"
+  title="Automobile resale application"
   githubLink="https://github.com/Retr0ville/AutoMart"
   liveLink="https://rtrvl-automart.herokuapp.com"
   bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
@@ -119,38 +118,19 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
   imageChild={
     <GatsbyImage
       imgClassName="project-card-image"
-      image={getImage(props.projectImages[4])}
-      alt="dictionary"
-      width={550}
-      height={260}
-    />
-  }
-  
-  projectName="Diction IO"
-  domColor="#0E7CEB"
-  title="A fully featured dictionary app"
-  githubLink="https://github.com/Retr0ville/Rtrvl-Diction"
-  liveLink="https://rtrvl-diction.netlify.app"
-  bg="linear-gradient(to right, #D585FF 0%, #00FFEE 100%)"
->
-  Diction IO is a dictionary app that allows users to search for words and their definitions, It displays a random word and its meaning upon launching or reloading the the web page,And includes a search form that accepts a word and provides the its meaning, audio, word phonetic, synonyms, antonyms e.t.c. in a standard dictionary format.
-</ProjectCard>
-<ProjectCard
-  imageChild={
-    <GatsbyImage
-      imgClassName="project-card-image"
       image={getImage(props.projectImages[5])}
       alt="dictionary"
       width={550}
       height={260}
     />
   }
-
-  projectName="Diction IO"
+  
+  projectName="DictionIO"
   domColor="#0E7CEB"
   title="A fully featured dictionary app"
   githubLink="https://github.com/Retr0ville/Rtrvl-Diction"
   liveLink="https://rtrvl-diction.netlify.app"
   bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
 >
+  Diction IO is a dictionary app that allows users to search for words and their definitions, It displays a random word and its meaning upon launching or reloading the the web page,And includes a search form that accepts a word and provides the its meaning, audio, word phonetic, synonyms, antonyms e.t.c. in a standard dictionary format.
 </ProjectCard>

@@ -27,7 +27,9 @@ const ProjectCard = ({ githubLink, liveLink, stack, title, children, bg, domColo
       onClick={()=>{
         !focused ? setCurrFocused(projectName) : setCurrFocused('none')
       }}
-      sx={{
+      sx={{      
+        // aspectRatio: `1 / 1`,
+        // minHeight: `600px`,
         transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
         "&:hover": {
           color: `white !important`,

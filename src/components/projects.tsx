@@ -53,9 +53,9 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
             code: {
               color: `white !important`,
             },
-            '> :nth-child(n+8)': {
-              display: `none !important`
-            }
+            // '> :nth-child(n+8)': {
+            //   display: `none !important`
+            // }
           }}
         >
           <MDXRenderer projectImages = {embeddedImagesLocal} >
