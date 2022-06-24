@@ -1,10 +1,12 @@
 ---
 title: Projects
 embeddedImagesLocal:
+  - gadget-det.jpg
   - automart-full.jpg
-  - Automart.jpg
-  - malbase.jpg
   - starbeats.jpg
+  - malbase.jpg
+  - checkout.jpg
+  - dictionary.jpg
   - omdb.jpg
 ---
 
@@ -19,19 +21,18 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
     <GatsbyImage
       imgClassName="project-card-image"
       image={getImage(props.projectImages[0])}
-      alt="A cinema"
+      alt="gadget-store"
       width={550}
       height={260}
     />
   }
-  projectName="cinema"
+  projectName="Gadgetlly"
   domColor="#d35400"
-  title="Tips & Tricks for Gatsby"
+  title="A gadget marketplace for users"
   link="https://www.lekoarts.de/gatsby/tips-and-tricks-for-gatsby?utm_source=cara&utm_medium=Theme"
   bg="linear-gradient(to right, #D4145A 0%, #FBB03B 100%)"
 >
-  A collection of short, but useful quick tips shared by me and the community
-  about Gatsby. From GraphQL over local development to deployment.
+ Gadgetlly is a little web store project of mine that's still a work in progress, the app was built using the MERN stack. It will feature letting users signUp, add items for sale, and also buy items all while navigating a ***wildy colorful*** UI. 
 </ProjectCard>
 <ProjectCard
   imageChild={
@@ -43,13 +44,13 @@ import { GatsbyImage, getImage } from "gatsby-plugin-image"
       height={260}
     />
   }
-  projectName="cars"
+  projectName="Automart"
   domColor="#6C25AD"
-  title="Setting  up a yarn Workspace"
+  title="Buy and sell Automobiles"
   link="https://www.lekoarts.de/javascript/setting-up-a-yarn-workspace-with-typescript-eslint-and-cypress?utm_source=cara&utm_medium=Theme"
   bg="linear-gradient(to right, #662D8C 0%, #ED1E79 100%)"
 >
-  A robust solution for multi-package repositories.
+  Not a fan of arbitrary colors? Automart is a saner store design where features item upload, delete, 
 </ProjectCard>
 <ProjectCard
   imageChild={
