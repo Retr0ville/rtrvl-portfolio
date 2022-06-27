@@ -6,22 +6,21 @@ import Hero from "../components/hero"
 import Projects from "../components/projects"
 import About from "../components/about"
 import Contact from "../components/contact"
-
 const Rtrvl = () => {
   const [currFocused, setCurrFocused] = React.useState("")
-  const value = React.useMemo(()=>{
-    return {currFocused, setCurrFocused}
-  } , [currFocused]);
+  const value = React.useMemo(() => {
+    return { currFocused, setCurrFocused }
+  }, [currFocused]);
   return (
     <Layout>
-      <Parallax pages={5}>
-        <Hero offset={0} factor={1} />
-        <focusContext.Provider value={value}>
+      <focusContext.Provider value={value}>
+        <Parallax pages={5}>
+          <Hero offset={0} factor={1} />
           <Projects offset={1} factor={2} />
-        </focusContext.Provider>
-        <About offset={3} factor={1} />
-        <Contact offset={4} factor={1} />
-      </Parallax>
+          <About offset={3} factor={1} />
+          <Contact offset={4} factor={1} />
+        </Parallax>
+      </focusContext.Provider>
     </Layout>
   )
 }
