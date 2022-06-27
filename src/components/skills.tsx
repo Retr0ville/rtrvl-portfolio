@@ -5,9 +5,8 @@ import Content from "../elements/content"
 import Svg from "./svg"
 import { UpDown, UpDownWide } from "../styles/animations"
 // @ts-ignore
-import AboutMDX from "../sections/about.mdx"
 
-const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
+const Skills = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
   <div>
     <Divider
       bg="divider"
@@ -37,10 +36,10 @@ const About = ({ offset, factor = 1 }: { offset: number; factor?: number }) => (
     </Divider>
     <Content speed={0.4} offset={offset} factor={factor}>
       <Inner>
-        <AboutMDX />
+        Skills
       </Inner>
     </Content>
   </div>
 )
 
-export default About
+export default Skills

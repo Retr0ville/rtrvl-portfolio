@@ -13,12 +13,13 @@ type ProjectCardProps = {
   children: React.ReactNode
   bg: string
   domColor: string
+  domColorAlt?: string
   imageChild: React.ReactNode
   focused: boolean
   projectName: string
 }
 
-const ProjectCard = ({ githubLink, liveLink, stack, title, children, bg, domColor, imageChild, projectName }: ProjectCardProps) => {
+const ProjectCard = ({ githubLink, liveLink, stack, title, children, bg, domColor, domColorAlt, imageChild, projectName }: ProjectCardProps) => {
   const { currFocused, setCurrFocused} = useContext(focusContext)
 
   let focused = projectName === currFocused
@@ -33,7 +34,7 @@ const ProjectCard = ({ githubLink, liveLink, stack, title, children, bg, domColo
         transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
         "&:hover": {
           color: `white !important`,
-          transform: `translateY(-5px) scale(1.06)`,
+          transform: `translateY(-5px) scale(1.02)`,
           ".linked": {
             zIndex: 2,
             opacity: 1,
@@ -102,7 +103,7 @@ const ProjectCard = ({ githubLink, liveLink, stack, title, children, bg, domColo
             top: 0,
             width: `50%`,
             height: `50%`,
-            boxShadow: `0 0 17px 3px ${domColor},0 0 4px 2px  ${domColor}`,
+            boxShadow: `0 0 17px 3px ${domColorAlt || domColor},0 0 4px 2px  ${domColor}`,
             zIndex: -1,
             // animationName: `${halfCyanShadow}`,
             animationTimingFunction: `ease`,
@@ -145,6 +146,7 @@ const ProjectCard = ({ githubLink, liveLink, stack, title, children, bg, domColo
         </div>
         <div
           sx={{
+            visibility:`${focused ? 'hidden' : 'visible'}`,
             textTransform: `uppercase`,
             letterSpacing: `wide`,
             pt: 4,
