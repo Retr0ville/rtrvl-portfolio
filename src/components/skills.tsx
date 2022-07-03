@@ -75,26 +75,38 @@ const Skills = ({ offset, factor = 1 }: { offset: number; factor?: number }) => 
                 flexDirection: `column`,
                 transform: `rotateX(65deg) rotate(-35deg)`,
                 transformStyle: `preserve-3d`,
+                
               }}
             >
-              <div>
+                {/******** FRONTEND ***********/}
+              <div
+                sx={{
+                  display: `flex`,
+                  flexDirection:`column`,
+                  justifyContent:`center`,
+                  alignItems:`center`,
+                }}
+              >
                 <div
                   sx={{
-                    display:`flex`,
-
+                    display: `flex`,
+                    justifyContent:`space-between`,
+                    // width: `500px`
                   }}
                 >
                   <div
                     sx={{
-                      display:`grid`
-                      gridTemplate:`2rem, `
+                      display: `grid`,
+                      gridTemplate: `auto 1fr 1fr / 1fr 1fr`,
+                      gap: `1rem, 0`,
                     }}
                   >
                     <h3
                       sx={{
                         margin: 0,
                         width: `100%`,
-                        textAlign: `center`
+                        textAlign: `center`,
+                        gridColumn: `1 / 3`,
                       }}
                     >Web Frameworks</h3>
                     {
@@ -102,10 +114,11 @@ const Skills = ({ offset, factor = 1 }: { offset: number; factor?: number }) => 
                         return (<figure
                           onClick={() => toggleFocus({ [w]: webFrames[w] })}
                           sx={{
+                            cursor: `pointer`,
                             margin: `10px`,
                             width: `100px`,
                             height: `100px`,
-                            transformStyle: `preserve-3d`,
+                            // transformStyle: `preserve-3d`,
                           }}
                         >
                           <div
@@ -178,24 +191,31 @@ const Skills = ({ offset, factor = 1 }: { offset: number; factor?: number }) => 
                       })
                     }
                   </div>
-                  <div>
+                  <div
+                    sx={{
+                      display: `grid`,
+                      gridTemplate: `2rem 1fr 1fr / auto auto`,
+                      gap: `1rem, 0`,
+                    }}
+                  >
                     <h3
                       sx={{
                         margin: 0,
-                        gridColumn: `3 / 5`,
                         width: `100%`,
-                        textAlign: `center`
+                        textAlign: `center`,
+                        gridColumn: `1 / 3`,
                       }}
-                    > Frameworks</h3>
+                    >Languages</h3>
                     {
                       Object.keys(pLangs).map(w => {
                         return (<figure
                           onClick={() => toggleFocus({ [w]: pLangs[w] })}
                           sx={{
+                            cursor: `pointer`,
                             margin: `10px`,
                             width: `100px`,
                             height: `100px`,
-                            transformStyle: `preserve-3d`,
+                            // transformStyle: `preserve-3d`,
                           }}
                         >
                           <div
@@ -269,23 +289,30 @@ const Skills = ({ offset, factor = 1 }: { offset: number; factor?: number }) => 
                     }
                   </div>
                 </div>
-                <div>
+                <div
+                  sx={{
+                    display: `grid`,
+                    gridTemplate:`2rem 1fr 1fr / 1fr 1fr 1fr`
+                  }}
+                >
                   <h3
                     sx={{
                       margin: 0,
                       width: `100%`,
-                      textAlign: `center`
+                      textAlign: `center`,
+                      gridColumn:`1 / 4`
                     }}
                   >Style Frameworks</h3>
                   {
                     Object.keys(styleFrames).map(w => {
                       return (<figure
-                        onClick={() => toggleFocus({ [w]: webFrames[w] })}
+                        onClick={() => toggleFocus({ [w]: styleFrames[w] })}
                         sx={{
+                          cursor: `pointer`,
                           margin: `10px`,
                           width: `100px`,
                           height: `100px`,
-                          transformStyle: `preserve-3d`,
+                          // transformStyle: `preserve-3d`,
                         }}
                       >
                         <div
@@ -294,7 +321,7 @@ const Skills = ({ offset, factor = 1 }: { offset: number; factor?: number }) => 
                             backgroundColor: `#4b5d5d`,
                             width: `100%`,
                             height: `100%`,
-                            // transformStyle:`preserve-3d`,
+                            transformStyle:`preserve-3d`,
                             backfaceVisibility: `hidden`,
                             transform: `${isFocused[w] ? 'translate3d(17px, -10px, 30px)' : 'unset'}`,
                             // borderLeft:`10px solid #d8dfdf`,
