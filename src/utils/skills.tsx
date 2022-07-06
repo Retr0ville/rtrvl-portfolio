@@ -91,28 +91,28 @@ export const skills : SkillsType = {
   },
   backend:{
     db:{
-      MongoDB:'',
-      Firebase:'',
-      GraphQL:'',
-      Cloudinary:'',
+      MongoDB:'mo',
+      Firebase:'fi',
+      GraphQL:'ga',
+      Cloudinary:'cl',
     },
     frameworks:{
-      Node:'',
-      Express:'',
-      Mongoose:'',
+      Node:'no',
+      Express:'ex',
+      Mongoose:'mo',
     },
   },
   devsAndSrc:{
-    Docker:'',
-    TravisCI:'',
-    CircleCI:'',
-    AWSElasticBeanstalk:'',
-    Git:''
+    Docker:'do',
+    TravisCI:'tr',
+    CircleCI:'ci',
+    AWSElasticBeanstalk:'aw',
+    Git:'git'
   },
   extra:{
-    Blender:'',
-    zBrush:'',
-    Wordpress:'',
-    'Chemical Engineering':''
+    Blender:'bl',
+    zBrush:'zb',
+    Wordpress:'wo',
+    'Chemical Engineering':'ch'
   }
 }
