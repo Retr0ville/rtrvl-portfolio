@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 export const  Blender =()=> (
 <svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" version="1.1" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
  <g fill-rule="nonzero">

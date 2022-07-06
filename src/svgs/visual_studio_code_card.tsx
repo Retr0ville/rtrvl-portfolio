@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 export const  Vscode =()=> (
   <svg fill="none" version="1.1" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
  <mask x="0" y="0" width="256" height="256" mask-type="alpha" maskUnits="userSpaceOnUse">

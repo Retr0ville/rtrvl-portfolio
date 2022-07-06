@@ -219,6 +219,7 @@ export const Frontend = () => {
                 {
                   Object.keys(webFrames).map(w => {
                     return (<figure
+                      title={w}
                       onClick={() => toggleFocus({ [w]: webFrames[w], category: 'Framework' })}
                       sx={{
                         cursor: `pointer`,
@@ -283,16 +284,23 @@ export const Frontend = () => {
                         }}
                       >
                         <div
-                          title={w}
                           sx={{
                             width: `100%`,
                             height: `100%`,
-                            margin: `0px`,
+                            margin: `0px auto`,
                             backgroundColor: `#4b5d5d`,
                             borderRadius: `8px`,
                           }}
                         >
-                          {skillsMappedToSvg[w]}
+                          <div
+                            sx={{
+                              margin: `0px auto`,
+                              width: `92%`,
+                              height: `92%`
+                            }}
+                          >
+                            {skillsMappedToSvg[w]()}
+                          </div>
                         </div>
                       </div>
                     </figure>)
@@ -317,6 +325,7 @@ export const Frontend = () => {
                 {
                   Object.keys(pLangs).map(w => {
                     return (<figure
+                      title={w}
                       onClick={() => toggleFocus({ [w]: pLangs[w], category: 'Language' })}
                       sx={{
                         cursor: `pointer`,
@@ -381,16 +390,23 @@ export const Frontend = () => {
                         }}
                       >
                         <div
-                          title={w}
                           sx={{
                             width: `100%`,
                             height: `100%`,
-                            margin: `0px`,
+                            margin: `0px auto`,
                             backgroundColor: `#4b5d5d`,
                             borderRadius: `8px`,
                           }}
                         >
-                          {skillsMappedToSvg[w]}
+                          <div
+                            sx={{
+                              margin: `0px auto`,
+                              width: `92%`,
+                              height: `92%`
+                            }}
+                          >
+                            {skillsMappedToSvg[w]()}
+                          </div>
                         </div>
                       </div>
                     </figure>)
@@ -415,6 +431,7 @@ export const Frontend = () => {
               {
                 Object.keys(styleFrames).map(w => {
                   return (<figure
+                    title={w}
                     onClick={() => toggleFocus({ [w]: styleFrames[w], category: 'Styling' })}
                     sx={{
                       cursor: `pointer`,
@@ -479,16 +496,25 @@ export const Frontend = () => {
                       }}
                     >
                       <div
-                        title={w}
                         sx={{
+                          display: `flex`,
+                          alignItems: `center`,
+                          justifyContent: `center`,
                           width: `100%`,
                           height: `100%`,
-                          margin: `0px`,
+                          margin: `0px auto`,
                           backgroundColor: `#4b5d5d`,
                           borderRadius: `8px`,
                         }}
                       >
-                        {skillsMappedToSvg[w]}
+                        <div
+                          sx={{
+                            width: `80%`,
+                            height: `80%`
+                          }}
+                        >
+                          {skillsMappedToSvg[w]()}
+                        </div>
                       </div>
                     </div>
                   </figure>)

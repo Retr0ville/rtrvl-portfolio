@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 export const  Css =()=> (
 <svg version="1.0" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
  <g stroke-width=".7">

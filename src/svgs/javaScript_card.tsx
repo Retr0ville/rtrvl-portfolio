@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 export const  Javascript =()=> (
   <svg aria-label="JavaScript" version="1.1" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
  <rect x="44" y="44" width="512" height="512" rx="77" ry="77" fill="#f7df1e"/>

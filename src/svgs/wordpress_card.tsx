@@ -1,3 +1,5 @@
+import * as React from 'react';
+
 export const  Wordpress =()=> (
 <svg version="1.1" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
  <rect x="50" y="50" width="500" height="500" rx="77" ry="77" fill="#05a8da"/>

@@ -217,6 +217,7 @@ export const Backend = () => {
                 {
                   Object.keys(db).map(w => {
                     return (<figure
+                      title={w}
                       onClick={() => toggleFocus({ [w]: db[w], category: 'Database' })}
                       sx={{
                         cursor: `pointer`,
@@ -280,17 +281,24 @@ export const Backend = () => {
                           },
                         }}
                       >
-                        <div
-                          title={w}
+                         <div
                           sx={{
                             width: `100%`,
                             height: `100%`,
-                            margin: `0px`,
+                            margin: `0px auto`,
                             backgroundColor: `#4b5d5d`,
                             borderRadius: `8px`,
                           }}
                         >
-                          {skillsMappedToSvg[w]}
+                          <div
+                            sx={{
+                              margin: `0px auto`,
+                              width: `92%`,
+                              height: `92%`
+                            }}
+                          >
+                            {skillsMappedToSvg[w]()}
+                          </div>
                         </div>
                       </div>
                     </figure>)
@@ -315,6 +323,7 @@ export const Backend = () => {
                 {
                   Object.keys(frameworks).map(w => {
                     return (<figure
+                      title={w}
                       onClick={() => toggleFocus({ [w]: frameworks[w], category: 'Framework' })}
                       sx={{
                         cursor: `pointer`,
@@ -379,16 +388,23 @@ export const Backend = () => {
                         }}
                       >
                         <div
-                          title={w}
                           sx={{
                             width: `100%`,
                             height: `100%`,
-                            margin: `0px`,
+                            margin: `0px auto`,
                             backgroundColor: `#4b5d5d`,
                             borderRadius: `8px`,
                           }}
                         >
-                          {skillsMappedToSvg[w]}
+                          <div
+                            sx={{
+                              margin: `0px auto`,
+                              width: `92%`,
+                              height: `92%`
+                            }}
+                          >
+                            {skillsMappedToSvg[w]()}
+                          </div>
                         </div>
                       </div>
                     </figure>)

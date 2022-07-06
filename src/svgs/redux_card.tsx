@@ -1,11 +1,11 @@
+import * as React from 'react';
+
 export const  Redux =()=> (
 <svg
    xmlns="http://www.w3.org/2000/svg"
    viewBox="0 0 600 574.6582"
    version="1.1"
-   id="svg10"
-   width="600"
-   height="574.6582">
+   id="svg10">
   <defs id="defs14" />
   <g
      fill="#764abc"
