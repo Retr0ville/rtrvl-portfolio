@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import * as React from "react"
 import { skills } from "../../utils/skills"
 import useFocus from "../../hooks/useFocusHook"
-import { gatsby } from "../../utils/svgIcons"
+import { skillsMappedToSvg } from "../../utils/svgIcons"
 
 const { db, frameworks } = skills.backend
 
@@ -22,13 +22,13 @@ export const Backend = () => {
     >
       <code
         sx={{
-          position:`relative`,
-          fontSize:`1.5rem`,
+          position: `relative`,
+          fontSize: `1.5rem`,
           width: `80vw`,
           maxWidth: `550px`,
           left: `20px`,
           top: `10px`
-          
+
         }}
       >
         .Backend()
@@ -40,8 +40,8 @@ export const Backend = () => {
           width: `80vw`,
           maxWidth: `550px`,
           height: `250px`,
-          padding:`2rem`,
-          paddingTop:`2.7rem`,
+          padding: `2rem`,
+          paddingTop: `2.7rem`,
           boxShadow: `-2px -2px 3px 3px rgba( 31, 38, 135, 0.6 )`,
           backdropFilter: `blur( 12px )`,
           borderRadius: `10px`,
@@ -49,7 +49,7 @@ export const Backend = () => {
           "-webkit-backdrop-filter": `blur( 12px )`,
         }}
       >
-         {
+        {
           Object.keys(isFocused).length > 0 &&
           (
             <>
@@ -84,19 +84,19 @@ export const Backend = () => {
           alignItems: `center`,
           overflowX: `auto`,
           scrollbarWidth: `thin`,
-          scrollbarColor:`purple #333`,
-          '&::-webkit-scrollbar':{
+          scrollbarColor: `purple #333`,
+          '&::-webkit-scrollbar': {
             height: '8px'
           },
-          '&::-webkit-scrollbar-track':{
+          '&::-webkit-scrollbar-track': {
             boxShadow: `-.5px -.5px 1px .5px rgba( 256, 256, 256, 0.6 ) inset`,
-            borderRadius:'20px',
+            borderRadius: '20px',
             background: '#333',
           },
-          '&::-webkit-scrollbar-thumb':{
+          '&::-webkit-scrollbar-thumb': {
             backgroundColor: 'rgba( 31, 38, 135, 0.6 )',
-            borderRadius:'20px',
-            border:`1px solid #00002233`
+            borderRadius: '20px',
+            border: `1px solid #00002233`
           },
 
         }}
@@ -146,7 +146,7 @@ export const Backend = () => {
 
             <div
               sx={{
-                paddingLeft:`1rem`,
+                paddingLeft: `1rem`,
               }}
             >
               return {`{`}
@@ -154,7 +154,7 @@ export const Backend = () => {
             {isFocused.category &&
               (<div
                 sx={{
-                  paddingLeft:`2rem`,
+                  paddingLeft: `2rem`,
                 }}
               >
                 currCategory:{isFocused.category}
@@ -163,21 +163,21 @@ export const Backend = () => {
             {Object.keys(isFocused).length > 0 &&
               (<div
                 sx={{
-                  paddingLeft:`2rem`,
+                  paddingLeft: `2rem`,
                 }}
               >
                 selected: {Object.keys(isFocused)[0]}
               </div>)}
             <div
-               sx={{
-                paddingLeft:`2rem`,
+              sx={{
+                paddingLeft: `2rem`,
               }}
             >
               {`}`}
             </div>
             <div
-               sx={{
-                paddingLeft:`1rem`,
+              sx={{
+                paddingLeft: `1rem`,
               }}
             >
               {`}`}
@@ -281,6 +281,7 @@ export const Backend = () => {
                         }}
                       >
                         <div
+                          title={w}
                           sx={{
                             width: `100%`,
                             height: `100%`,
@@ -289,7 +290,7 @@ export const Backend = () => {
                             borderRadius: `8px`,
                           }}
                         >
-                          {gatsby(100, 100)}
+                          {skillsMappedToSvg[w]}
                         </div>
                       </div>
                     </figure>)
@@ -378,6 +379,7 @@ export const Backend = () => {
                         }}
                       >
                         <div
+                          title={w}
                           sx={{
                             width: `100%`,
                             height: `100%`,
@@ -386,7 +388,7 @@ export const Backend = () => {
                             borderRadius: `8px`,
                           }}
                         >
-                          {gatsby(100, 100)}
+                          {skillsMappedToSvg[w]}
                         </div>
                       </div>
                     </figure>)

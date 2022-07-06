@@ -3,9 +3,7 @@ import { jsx } from "theme-ui"
 import * as React from "react"
 import { skills } from "../../utils/skills"
 import useFocus from "../../hooks/useFocusHook"
-import { gatsby, skillsMappedToSvg } from "../../utils/svgIcons"
-import { StaticImage } from "gatsby-plugin-image"
-import '../../svgs/Figma_card.svg'
+import { skillsMappedToSvg } from "../../utils/svgIcons"
 
 const { webFrames, pLangs, styleFrames } = skills.frontend
 
@@ -285,7 +283,7 @@ export const Frontend = () => {
                         }}
                       >
                         <div
-                        title= "update"
+                          title={w}
                           sx={{
                             width: `100%`,
                             height: `100%`,
@@ -294,7 +292,7 @@ export const Frontend = () => {
                             borderRadius: `8px`,
                           }}
                         >
-                       skillsMappedToSvg[w]
+                          {skillsMappedToSvg[w]}
                         </div>
                       </div>
                     </figure>)
@@ -383,6 +381,7 @@ export const Frontend = () => {
                         }}
                       >
                         <div
+                          title={w}
                           sx={{
                             width: `100%`,
                             height: `100%`,
@@ -391,7 +390,7 @@ export const Frontend = () => {
                             borderRadius: `8px`,
                           }}
                         >
-                          {gatsby(100, 100)}
+                          {skillsMappedToSvg[w]}
                         </div>
                       </div>
                     </figure>)
@@ -480,6 +479,7 @@ export const Frontend = () => {
                       }}
                     >
                       <div
+                        title={w}
                         sx={{
                           width: `100%`,
                           height: `100%`,
@@ -488,7 +488,7 @@ export const Frontend = () => {
                           borderRadius: `8px`,
                         }}
                       >
-                        {gatsby(100, 100)}
+                        {skillsMappedToSvg[w]}
                       </div>
                     </div>
                   </figure>)
