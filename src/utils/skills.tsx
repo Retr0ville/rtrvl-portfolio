@@ -66,53 +66,53 @@ interface WebFrames {
   EJS: string;
   Gatsby: string;
 }
-export const skills : SkillsType = {
+export const skills: SkillsType = {
   frontend: {
-    webFrames:{
-      React:'re',
-      Next:'ne',
-      EJS:'ej',
-      Gatsby:'ga',
+    webFrames: {
+      React: 're',
+      Next: 'ne',
+      EJS: 'ej',
+      Gatsby: 'ga',
     },
-    pLangs:{
-      Typescript:'ty',
-      Javascript:'ja',
-      HTML5:'ht',
-      CSS3:'cs',
+    pLangs: {
+      Typescript: 'ty',
+      Javascript: 'ja',
+      HTML5: 'ht',
+      CSS3: 'cs',
     },
-    styleFrames:{
-      Bootstrap:'bo',
-      Tailwind:'ta',
-      'Styled-components':'st',
-      ChakraUI:'ch',
-      SemanticUI:'se',
-      'React-Spring':'re',
-    },
-  },
-  backend:{
-    db:{
-      MongoDB:'mo',
-      Firebase:'fi',
-      GraphQL:'ga',
-      Cloudinary:'cl',
-    },
-    frameworks:{
-      Node:'no',
-      Express:'ex',
-      Mongoose:'mo',
+    styleFrames: {
+      Bootstrap: 'bo',
+      Tailwind: 'ta',
+      'Styled-components': 'st',
+      ChakraUI: 'ch',
+      SemanticUI: 'se',
+      'React-Spring': 're',
     },
   },
-  devsAndSrc:{
-    Docker:'do',
-    TravisCI:'tr',
-    CircleCI:'ci',
-    AWSElasticBeanstalk:'aw',
-    Git:'git'
+  backend: {
+    db: {
+      MongoDB: 'mo',
+      Firebase: 'fi',
+      GraphQL: 'ga',
+      Cloudinary: 'cl',
+    },
+    frameworks: {
+      Node: 'no',
+      Express: 'ex',
+      Mongoose: 'mo',
+    },
   },
-  extra:{
-    Blender:'bl',
-    zBrush:'zb',
-    Wordpress:'wo',
-    'Chemical Engineering':'ch'
+  devsAndSrc: {
+    Docker: 'do',
+    TravisCI: 'tr',
+    CircleCI: 'ci',
+    AWSElasticBeanstalk: 'aw',
+    Git: 'git'
+  },
+  extra: {
+    Blender: 'bl',
+    zBrush: 'zb',
+    Wordpress: 'wo',
+    'Chemical Engineering': 'ch'
   }
 }
