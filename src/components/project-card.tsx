@@ -3,12 +3,12 @@ import { jsx } from "theme-ui"
 import { StaticImage } from "gatsby-plugin-image"
 import { useContext } from "react"
 import focusContext from "../contexts/focusContext"
-import { halfCyanShadow, halfYellowShadow, bounceFadeForward, bounceFadeBackward} from "../styles/keyframes"
+import { halfCyanShadow, halfYellowShadow, bounceFadeForward, bounceFadeBackward } from "../styles/keyframes"
 
 type ProjectCardProps = {
-  githubLink: string  
+  githubLink: string
   liveLink: string
-  stack: string[] 
+  stack: string[]
   title: string
   children: React.ReactNode
   bg: string
@@ -20,15 +20,15 @@ type ProjectCardProps = {
 }
 
 const ProjectCard = ({ githubLink, liveLink, stack, title, children, bg, domColor, domColorAlt, imageChild, projectName }: ProjectCardProps) => {
-  const { currFocused, setCurrFocused} = useContext(focusContext)
+  const { currFocused, setCurrFocused } = useContext(focusContext)
 
   let focused = projectName === currFocused
   return (
     <div
-      onClick={()=>{
+      onClick={() => {
         !focused ? setCurrFocused(projectName) : setCurrFocused('none')
       }}
-      sx={{      
+      sx={{
         // aspectRatio: `1 / 1`,
         // minHeight: `600px`,
         transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
@@ -146,7 +146,7 @@ const ProjectCard = ({ githubLink, liveLink, stack, title, children, bg, domColo
         </div>
         <div
           sx={{
-            visibility:`${focused ? 'hidden' : 'visible'}`,
+            visibility: `${focused ? 'hidden' : 'visible'}`,
             textTransform: `uppercase`,
             letterSpacing: `wide`,
             pt: 4,
