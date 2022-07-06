@@ -13,4 +13,5 @@ const useFocus = () => {
   return { isFocused, toggleFocus };
 };
 
+
 export default useFocus;
