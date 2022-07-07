@@ -31,7 +31,7 @@ export const Backend = () => {
 
         }}
       >
-        .Backend()
+        .Backend<span sx={{color:`#fff000`, margin:0, padding:0,}}>()</span>
       </code>
       <div
         sx={{
@@ -213,7 +213,7 @@ export const Backend = () => {
                     textAlign: `center`,
                     gridColumn: `1 / 3`,
                   }}
-                >Database</h3>
+                >.Database()</h3>
                 {
                   Object.keys(db).map(w => {
                     return (<figure
@@ -319,7 +319,7 @@ export const Backend = () => {
                     textAlign: `center`,
                     gridColumn: `1 / 3`,
                   }}
-                >Frameworks</h3>
+                >.Frameworks()</h3>
                 {
                   Object.keys(frameworks).map(w => {
                     return (<figure

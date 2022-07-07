@@ -31,7 +31,7 @@ export const Frontend = () => {
 
         }}
       >
-        .Frontend()
+        .Frontend<span sx={{color:`#fff000`, margin:0, padding:0,}}>()</span>
       </code>
       <div
         sx={{
@@ -215,7 +215,7 @@ export const Frontend = () => {
                     textAlign: `center`,
                     gridColumn: `1 / 3`,
                   }}
-                >Web Frameworks</h3>
+                >.WebFrameworks()</h3>
                 {
                   Object.keys(webFrames).map(w => {
                     return (<figure
@@ -321,7 +321,7 @@ export const Frontend = () => {
                     textAlign: `center`,
                     gridColumn: `1 / 3`,
                   }}
-                >Languages</h3>
+                >.Languages()</h3>
                 {
                   Object.keys(pLangs).map(w => {
                     return (<figure
@@ -427,7 +427,7 @@ export const Frontend = () => {
                   textAlign: `center`,
                   gridColumn: `1 / 4`
                 }}
-              >Style Frameworks</h3>
+              >.StyleFrameworks()</h3>
               {
                 Object.keys(styleFrames).map(w => {
                   return (<figure

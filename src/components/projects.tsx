@@ -43,7 +43,7 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
             display: `grid`,
             gridGap: [4, 4, 4, 5],
             gridTemplateColumns: [`1fr`, `1fr`, `repeat(2, 1fr)`],
-            h2: { gridColumn: `-1/1`, color: `white !important` },
+            h2: { gridColumn: `-1/1`, },
             "hr, p": {
                gridColumn: `-1/1`,
             },
@@ -51,7 +51,7 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
               color: `rgb(229 230 36)`,
             },
             code: {
-              color: `white !important`,
+              // color: `white !important`,
             },
             // '> :nth-child(n+8)': {
             //   display: `none !important`

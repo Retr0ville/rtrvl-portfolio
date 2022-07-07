@@ -33,7 +33,7 @@ export const DevAndXtra = () => {
 
         }}
       >
-        .Devops&Extras()
+        .Devops&Extras<span sx={{color:`#fff000`, margin:0, padding:0,}}>()</span>
       </code>
       <div
         sx={{
@@ -216,7 +216,7 @@ export const DevAndXtra = () => {
                     textAlign: `center`,
                     gridColumn: `1 / 3`,
                   }}
-                >Database</h3>
+                >.Devops()</h3>
                 {
                   Object.keys(devsAndSrc).map(w => {
                     return (<figure
@@ -322,7 +322,7 @@ export const DevAndXtra = () => {
                     textAlign: `center`,
                     gridColumn: `1 / 3`,
                   }}
-                >Frameworks</h3>
+                >.Extras()</h3>
                 {
                   Object.keys(extra).map(w => {
                     return (<figure
