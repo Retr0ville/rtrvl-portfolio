@@ -178,13 +178,18 @@ const ContactForm = () => (
             flexDirection: `column`,
             alignItems: `center`,
             justifyContent: `center`,
-            width: `90px`,
-            height: `40px`,
-            backgroundColor: `#787878`,
+            width: `80px`,
+            height: `35px`,
+            backgroundColor: `#999999`,
             color:`#000`,
             fontSize:`1rem`,
             border: `none`,
-            borderRadius: `5px`
+            borderRadius: `5px`,
+            transition:` all 200ms`,
+            '&:hover': {
+              transform: `scale(1.05)`,
+              backgroundColor: `#fff`,
+            }
           }}
         ><ArrowSvg /></button>
       </div>
