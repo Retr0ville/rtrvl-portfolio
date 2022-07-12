@@ -29,6 +29,8 @@ const ProjectCard = ({ githubLink, liveLink, stack, title, children, bg, domColo
         !focused ? setCurrFocused(projectName) : setCurrFocused('none')
       }}
       sx={{
+
+        // maxWidth: ['480px', '480px', '480px', '480px', '100%'],
         // aspectRatio: `1 / 1`,
         // minHeight: `600px`,
         transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,

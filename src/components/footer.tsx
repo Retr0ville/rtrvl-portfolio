@@ -11,12 +11,12 @@ const Footer = () => {
   return (
     <Box as="footer" variant="footer">
       <button
-        sx={{ variant: `buttons.toggle`, fontWeight: `semibold`, display: `block`, mx: `auto`, mb: 3 }}
+        sx={{ variant: `buttons.toggle`, fontWeight: `semibold`, display: `block`, mx: `auto`, mb: 3, }}
         onClick={toggleColorMode}
         type="button"
         aria-label="Toggle dark mode"
       >
-        {isDark ? `Light` : `Dark`}
+        {isDark ? `Bright Light` : `Go Dark`}
       </button>
       Copyright &copy; {new Date().getFullYear()}. All rights reserved.
       <br />
@@ -24,17 +24,17 @@ const Footer = () => {
         sx={{
           justifyContent: `center`,
           alignItems: `center`,
-          mt: 3,
+          mt: 1,
           color: `text`,
           fontWeight: `semibold`,
           a: { color: `text` },
         }}
-      >
-        {isDark ? (
+      >Samuel Akhaze
+        {/* {isDark ? (
           <img width="30" height="30" src="https://img.lekoarts.de/gatsby/logo_v2-light_w30.png" alt="LekoArts Logo" />
         ) : (
           <img width="30" height="30" src="https://img.lekoarts.de/gatsby/logo_v2_w30.png" alt="LekoArts Logo" />
-        )}
+        )} */}
         {` `}
         {/* <Link
           aria-label="Link to the theme's GitHub repository"

@@ -65,13 +65,20 @@ export const Frontend = () => {
                   {Object.keys(isFocused)[0]}:
                 </code>
               </h3>
-              <code
-                sx={{
-                  marginLeft: `20px`
+              <div
+                 sx={{
+                  height: `80%`,
+                  marginLeft: `20px`,
+                  overflowY: `scroll`,
+                  overflowX: `hidden`,
+                  fontSize: [ '.85rem', '.85rem', '.85rem', '.85rem',' 1rem']
                 }}
               >
+                 <code>
                 {isFocused[Object.keys(isFocused)[0]]}
               </code>
+              </div>
+             
             </>)
         }
 
