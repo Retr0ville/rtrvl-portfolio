@@ -17,7 +17,7 @@ export const Wave = ({ children, left, right, className}: { children: React.Reac
     setCurr(svgRef.current)
   }, [svgRef])
   // @ts-ignore
-  let morpher = typeof window !== undefined ? Snap(curr) : null
+  let morpher = typeof Snap !== undefined ? Snap(curr) : null
   let path = morpher.select('path')
   const toggleMenu = () => {
     if (isAnimating) return false
