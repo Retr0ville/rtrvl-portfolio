@@ -25,7 +25,7 @@ export const Wave = ({ children, left, right, className}: { children: React.Reac
   },[curr])
   useEffect(()=>{
     // @ts-ignore
-    setPath(morpher.select('path'))
+    setPath(morpher?.select('path'))
   },[morpher])
   
   const toggleMenu = () => {
