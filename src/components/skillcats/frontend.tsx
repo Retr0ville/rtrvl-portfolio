@@ -31,7 +31,7 @@ export const Frontend = () => {
 
         }}
       >
-        .Frontend<span sx={{color:`#fff000`, margin:0, padding:0,}}>()</span>
+        .Frontend<span sx={{ color: `#fff000`, margin: 0, padding: 0, }}>()</span>
       </code>
       <div
         sx={{
@@ -66,19 +66,34 @@ export const Frontend = () => {
                 </code>
               </h3>
               <div
-                 sx={{
+                sx={{
                   height: `80%`,
                   marginLeft: `20px`,
                   overflowY: `scroll`,
                   overflowX: `hidden`,
-                  fontSize: [ '.85rem', '.85rem', '.85rem', '.85rem',' 1rem']
+                  fontSize: ['.85rem', '.85rem', '.85rem', '.85rem', ' 1rem'],
+                  scrollbarWidth: `thin`,
+                  scrollbarColor: `purple #333`,
+                  '&::-webkit-scrollbar': {
+                    width: '8px'
+                  },
+                  '&::-webkit-scrollbar-track': {
+                    boxShadow: `-.5px -.5px 1px .5px rgba( 256, 256, 256, 0.6 ) inset`,
+                    borderRadius: '20px',
+                    background: '#333',
+                  },
+                  '&::-webkit-scrollbar-thumb': {
+                    backgroundColor: 'rgba( 31, 38, 135, 0.6 )',
+                    borderRadius: '20px',
+                    border: `1px solid #00002233`
+                  },
                 }}
               >
-                 <code>
-                {isFocused[Object.keys(isFocused)[0]]}
-              </code>
+                <code>
+                  {isFocused[Object.keys(isFocused)[0]]}
+                </code>
               </div>
-             
+
             </>)
         }
 
