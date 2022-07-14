@@ -23,7 +23,7 @@ export const Wave = ({ children, left, right, className}: { children: React.Reac
     setMorpher(Snap(curr))
   },[])
   // @ts-ignore
-  let path = morpher.select('path')
+  let path =(morpher && morpher.select) ? morpher.select('path') : null
   const toggleMenu = () => {
     if (isAnimating) return false
     setIsAnimating(true)
