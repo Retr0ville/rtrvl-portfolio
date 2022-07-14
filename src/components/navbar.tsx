@@ -9,28 +9,28 @@ import { useState } from "react";
 
 
 const Navbar = ({ scrollHere }) => {
-  const [width,setWidth] = useState(window.innerWidth)
-  function debounce(fn, ms){
-    let timer
-    return ()=>{
-      clearTimeout(timer)
-      timer =setTimeout(()=>{
-        timer = null
-        fn.apply(this, arguments)
-      }, ms)
-    }
-  }
-  useEffect(()=>{
+  // const [width,setWidth] = useState(window.innerWidth)
+  // function debounce(fn, ms){
+  //   let timer
+  //   return ()=>{
+  //     clearTimeout(timer)
+  //     timer =setTimeout(()=>{
+  //       timer = null
+  //       fn.apply(this, arguments)
+  //     }, ms)
+  //   }
+  // }
+  // useEffect(()=>{
 
-     const debouncedHandleResize =debounce(function handleResize(){
-     setWidth(window.innerWidth)
-     }, 1000)
+  //    const debouncedHandleResize =debounce(function handleResize(){
+  //    setWidth(window.innerWidth)
+  //    }, 1000)
 
      
-     window.addEventListener( 'resize', debouncedHandleResize)
-     return () => window.removeEventListener( 'resize', debouncedHandleResize)
-    },
-  [])
+  //    window.addEventListener( 'resize', debouncedHandleResize)
+  //    return () => window.removeEventListener( 'resize', debouncedHandleResize)
+  //   },
+  // [])
   return (
     <>
       <Wave right>
