@@ -13,11 +13,16 @@ export const Wave = ({ children, left, right, className}: { children: React.Reac
     openPath = "M0,100h1000V0c0,0-136.938,0-224,0C583,0,610.924,0,498,0C387,0,395,0,249,0C118,0,0,0,0,0V100z"
     
   const [curr, setCurr] = useState(null)
+  const  [morpher, setMorpher] = useState()
   useEffect(() => {
     setCurr(svgRef.current)
   }, [svgRef])
+  
+  useEffect(()=>{
+    // @ts-ignore
+    setMorpher(Snap(curr))
+  },[])
   // @ts-ignore
-  let morpher = typeof Snap !== undefined ? Snap(curr) : null
   let path = morpher.select('path')
   const toggleMenu = () => {
     if (isAnimating) return false
