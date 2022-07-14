@@ -92,7 +92,7 @@ export const skills: SkillsType = {
   backend: {
     db: {
       MongoDB: 'I have strong knowledge of MongoDB. I use it as a database manager and user management library, MongoDB is a great database manager for small and large scale applications. I have a good and working understanding of the different ways of using MongoDB and how to use it in a production environment.',
-      Firebase: 'I jhave basic understanding of Firebase. I have used a lot of its features in my previous place of work, features like, user authentication, Firestore storage, the realtime database, cloud functions, etc. I have a basic understanding of the different ways of using Firebase and how to use it in a production environment.',
+      Firebase: 'I have basic understanding of Firebase. I have used a lot of its features in my previous place of work, features like, user authentication, Firestore storage, the realtime database, cloud functions, etc. I have a basic understanding of the different ways of using Firebase and how to use it in a production environment.',
       GraphQL: 'I have basic understanding of GraphQL query language and I have used it in building this website. I have explored the GraphiQL IDE and can create simple query scripts and implement them with the useQuery hook or PageQuery alternatively.',
       Cloudinary: 'I have experience with Cloudinary as a cloud image storage service. I used the API in one of my projects store images uploaded to the application and return the URL for storage in MongoDB.',
     },
