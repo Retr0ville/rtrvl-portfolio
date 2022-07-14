@@ -29,6 +29,20 @@ const Layout = ({ children, className = `` }: LayoutProps) => (
           fontFamily: `monospace`,
           fontSize: `1em`,
         },
+        scrollbarWidth: `thin`,
+        scrollbarColor: `purple #333`,
+        '&::-webkit-scrollbar': {
+          width: '8px'
+        },
+        '&::-webkit-scrollbar-track': {
+          boxShadow: `-.5px -.5px 1px .5px rgba( 256, 256, 256, 0.6 ) inset`,
+          background: '#333',
+        },
+        '&::-webkit-scrollbar-thumb': {
+          backgroundColor: 'rgba( 31, 38, 135, 0.6 )',
+          borderRadius: '20px',
+          border: `1px solid #00002233`
+        },
         "[hidden]": {
           display: `none`,
         },

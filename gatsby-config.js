@@ -12,7 +12,7 @@ module.exports = {
     siteUrl: `https://github.com/Retr0ville`,
     siteDescription: `Projects, Blog, and Design showcase`,
     siteLanguage: `en`,
-    siteImage: `/banner.jpg`,
+    siteImage: `/android-chrome-192x192.png`,
     author: `Samuel Akhaze`,
   },
   plugins: [

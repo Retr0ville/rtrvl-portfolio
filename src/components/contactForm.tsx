@@ -183,6 +183,7 @@ const ContactForm = () => (
             backgroundColor: `#999999`,
             color:`#000`,
             fontSize:`1rem`,
+            zIndex: 1000,
             border: `none`,
             borderRadius: `5px`,
             transition:` all 200ms`,

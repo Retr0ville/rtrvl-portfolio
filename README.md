@@ -9,9 +9,9 @@
 
 <p align="center">
   <a href="https://github.com/Retr0ville/rtrvl-portfolio/blob/master/LICENSE">
-    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Gatsby Starter Portfolio: Cara is released under the 0BSD license." />
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="Gatsby by Samuel Akhaze" />
   </a>
-  <a href="https://github.com/sponsors/LekoArts">
+  <a href="https://github.com/sponsors/Retr0ville">
     <img alt="GitHub Sponsors" src="https://img.shields.io/github/sponsors/Retr0ville">
   </a>
   <a href="https://github.com/Retr0ville/">

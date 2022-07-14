@@ -3,6 +3,7 @@ import { jsx } from "theme-ui"
 import * as React from 'react';
 import { useState } from "react";
 import { useEffect } from "react";
+import { StaticImage } from "gatsby-plugin-image";
 // import  './snap.svg-min.js';
 export const Wave = ({ children, left, right, className}: { children: React.ReactElement[], left? : boolean, right? : boolean, className?: string }) => {
   const svgRef = React.useRef(null),
@@ -160,37 +161,53 @@ export const Wave = ({ children, left, right, className}: { children: React.Reac
           </svg>
         </div>
       </div>
-      <button type="button" className="menu-button" id="open-button"
+      <button type="button" role="button" aria-label="open menu" className="menu-button" id="open-button"
         onClick={() => toggleMenu()}
         sx={{
           cursor: `pointer`,
           position: `fixed`,
           bottom: 0,
-          [left ? 'left' : right ? 'right' : 'right']: 0,
+          [left ? 'left' : right ? 'right' : 'right']: `1rem`,
           zIndex: 1000,
           margin: `1em`,
           padding: 0,
-          width: `2.5em`,
-          height: `2.25em`,
+          opacity: 0.6,
+          transition: `all .3s`,
+          // width: `2.5em`,
+          // height: `2.25em`,
           border: ` none`,
-          textIndent: `2.5em`,
-          fontSize: `1.5em`,
-          color: `transparent`,
           background: `transparent`,
           ' :hover': {
-            opacity: 0.6,
+            opacity: 0.9,
+            '.logo':{
+              borderRadius: `62% 43% 40% 60% / 55% 64% 45% 45%`,
+            }
+
           },
-          ':before': {
-            content: `''`,
-            position: `absolute`,
-            top: `0.5em`,
-            right: `0.5em`,
-            bottom: `0.5em`,
-            left: `0.5em`,
-            background: `linear-gradient(#fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%)`,
-          }
+          // ':before': {
+          //   content: `''`,
+          //   position: `absolute`,
+          //   top: `0.5em`,
+          //   right: `0.5em`,
+          //   bottom: `0.5em`,
+          //   left: `0.5em`,
+          //   background: `linear-gradient(#fff 20%, transparent 20%, transparent 40%, #fff 40%, #fff 60%, transparent 60%, transparent 80%, #fff 80%)`,
+          // }
         }}
-      >Open Menu</button>
+      >
+         <StaticImage
+         className="logo"
+        src="../../images/logo-min.png"
+        alt="menu"
+        width={60}
+        sx={{
+          borderRadius:`50% 57% 56% 56% / 50% 50% 50% 63%`,
+          transition: `all .5s`,
+        }}
+        />
+        </button>
+
+     
     </div>
   )
 }

@@ -72,7 +72,7 @@ export const DevAndXtra = () => {
                 sx={{
                   height: `75%`,
                   marginLeft: `20px`,
-                  overflowY: `scroll`,
+                  overflowY: `auto`,
                   overflowX: `hidden`,
                   fontSize: [ '.85rem', '.85rem', '.85rem', '.85rem',' 1rem'],
                   scrollbarWidth: `thin`,
