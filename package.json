@@ -6,7 +6,7 @@
   "author": "Retroville",
   "license": "MIT",
   "scripts": {
-    "build": "gatsby build --legacy-peer-deps",
+    "build": "gatsby build",
     "develop": "gatsby develop -p 8100",
     "start": "gatsby develop -p 8100",
     "serve": "gatsby serve",
