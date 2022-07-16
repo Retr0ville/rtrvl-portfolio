@@ -1,4 +1,5 @@
 /** @jsx jsx */
+import { useEffect } from "react"
 import { Box, Flex, Link, useColorMode, jsx } from "theme-ui"
 
 const Footer = () => {
@@ -7,6 +8,10 @@ const Footer = () => {
   const toggleColorMode = (e: any) => {
     setColorMode(isDark ? `light` : `dark`)
   }
+  useEffect(() => {
+    setColorMode(`dark`)
+  }
+  , [])
 
   return (
     <Box as="footer" variant="footer">
