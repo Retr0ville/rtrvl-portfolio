@@ -1,20 +1,19 @@
+
 require(`dotenv`).config()
 
-const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
+
+const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE 
 
 module.exports = {
   siteMetadata: {
-    // You can overwrite values here that are used for the SEO component
-    // You can also add new values here to query them like usual
-    // See all options: https://github.com/LekoArts/gatsby-themes/blob/main/themes/gatsby-theme-cara/gatsby-config.js
-    siteTitle: `Rtrvl`,
+    siteTitle: `Samuel Akhaze`,
     siteTitleAlt: `Rtrvl - Projects, Blog, and Design showcase`,
     siteHeadline: `Rtrvl - Projects, Blog, and Design showcase`,
     siteUrl: `https://github.com/Retr0ville`,
     siteDescription: `Projects, Blog, and Design showcase`,
     siteLanguage: `en`,
-    siteImage: `/banner.jpg`,
-    author: `Rtrvl`,
+    siteImage: `/android-chrome-192x192.png`,
+    author: `Samuel Akhaze`,
   },
   plugins: [
     {
@@ -22,6 +21,13 @@ module.exports = {
       options: {
         name: `sections`,
         path: `${__dirname}/src/sections`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sections`,
+        path: `${__dirname}/src/svgs`,
       },
     },
     {
