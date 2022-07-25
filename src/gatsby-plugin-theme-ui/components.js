@@ -1,4 +1,5 @@
 import * as React from "react"
+import Mouse from "../components/mouse/mouse.tsx"
 import ProjectCard from "../components/project-card"
 
 const components = {
@@ -8,6 +9,7 @@ const components = {
       {children}
     </ProjectCard>
   ),
+  Mouse: ()=> <Mouse />
 }
 
 export default components
