@@ -1,0 +1,33 @@
+.mouse {
+  animation: mouse-bounce 2.6s infinite;
+}
+.mouse-dots {
+  animation: dots-opacity 2.6s infinite;
+}
+
+@keyframes mouse-bounce {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(50%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes dots-opacity {
+  0% {
+    opacity: .9;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: .9;
+  }
+}

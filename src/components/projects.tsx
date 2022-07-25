@@ -41,12 +41,13 @@ const Projects = ({ offset, factor = 2 }: { offset: number; factor?: number }) =
           <div
             sx={{
               display: `grid`,
+              paddingInline: [`1rem`, `1rem`, `0`],
               width: `100%`,
               alignItems: `center`,
               justifyContent: `center`,
               gridGap: [4, 4, 4, 5],
               gridTemplateColumns: [`1fr`, `1fr`, `1fr`, `repeat(2, 1fr)`],
-              h2: { gridColumn: `-1/1`, },
+              h2: { gridColumn: `-1/1`, fontSize:[`1.75rem`, `1.75rem`, `1.875rem`] },
               "hr, p": {
                 gridColumn: `-1/1`,
               },

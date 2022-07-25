@@ -30,7 +30,8 @@ const ProjectCard = ({ githubLink, liveLink, stack, title, children, bg, domColo
       }}
       sx={{
 
-        // maxWidth: ['480px', '480px', '480px', '480px', '100%'],
+        maxWidth: ['280px', '500px', `unset`],
+        marginInline: `auto`,
         // aspectRatio: `1 / 1`,
         // minHeight: `600px`,
         transition: `all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) !important`,
@@ -138,6 +139,7 @@ const ProjectCard = ({ githubLink, liveLink, stack, title, children, bg, domColo
             top: `${focused ? "12%" : "25%"}`,
             color: `white`,
             // backgroundColor:`#39393911`,
+            fontSize:[`0.75rem`, `.9rem`, `1rem`],
             borderRadius: `0 8px 8px 0`,
             left: `0`,
             padding: `1rem`,
@@ -152,7 +154,7 @@ const ProjectCard = ({ githubLink, liveLink, stack, title, children, bg, domColo
             textTransform: `uppercase`,
             letterSpacing: `wide`,
             pt: 4,
-            fontSize: [4, 5],
+            fontSize: [3, 4],
             fontWeight: `medium`,
             lineHeight: 1,
             marginInline: `1rem`,
