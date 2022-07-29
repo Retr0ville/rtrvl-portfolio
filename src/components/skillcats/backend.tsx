@@ -29,6 +29,7 @@ export const Backend = () => {
           left: `20px`,
           top: `10px`,
           zIndex: `10`,
+          filter: `drop-shadow(2px 1px 3px white)`,
         }}
       >
         .Backend<span sx={{color:`#fff000`, margin:0, padding:0,}}>()</span>

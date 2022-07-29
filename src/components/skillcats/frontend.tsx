@@ -29,6 +29,7 @@ export const Frontend = () => {
           left: `20px`,
           top: [`185px`, '185px', '200px'],
           zIndex: `10`,
+          filter: `drop-shadow(2px 1px 3px white)`,
         }}
       >
         .Frontend<span sx={{ color: `#fff000`, margin: 0, padding: 0, }}>()</span>
