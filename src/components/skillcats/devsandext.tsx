@@ -29,8 +29,8 @@ export const DevAndXtra = () => {
           width: `80vw`,
           maxWidth: `550px`,
           left: `20px`,
-          top: `10px`
-
+          top: `10px`,
+          zIndex: `10`,
         }}
       >
         .Devops&Extras<span sx={{color:`#fff000`, margin:0, padding:0,}}>()</span>

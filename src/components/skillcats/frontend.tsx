@@ -27,8 +27,8 @@ export const Frontend = () => {
           width: `80vw`,
           maxWidth: `550px`,
           left: `20px`,
-          top: [`185px`, '185px', '200px']
-
+          top: [`185px`, '185px', '200px'],
+          zIndex: `10`,
         }}
       >
         .Frontend<span sx={{ color: `#fff000`, margin: 0, padding: 0, }}>()</span>
