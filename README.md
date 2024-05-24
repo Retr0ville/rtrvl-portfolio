@@ -26,7 +26,7 @@
 
 
 ## ✨ Features
-- My latest projects
+- My latest projects (needs an update :)
 - My Blogs
 - Theme UI-based theming
 - react-spring Parallax Effect
